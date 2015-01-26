@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "https://dumps.carroarmato0.be/vagrantboxes/centos-6.6-64b-puppet-vbox.box"
 
   config.vm.define "storage01" do |storage01|
-  	config.vm.hostname = "storage01"
+  	storage01.vm.hostname = "storage01"
     storage01.vm.network "private_network", ip: "192.168.33.1"
   end
 
@@ -30,7 +30,7 @@ Vagrant.configure(2) do |config|
 		puppet.manifest_file  		= "site.pp"
 		puppet.module_path  			= "modules"
 		puppet.hiera_config_path  = "hiera.yaml"
-#     puppet.options = "--verbose --debug"
+#    puppet.options = "--verbose --debug"
    end
 
 end
