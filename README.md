@@ -21,8 +21,14 @@ The 2 Storage VM's will get a second disk /dev/sdb on the fly with 500GB space w
 
 ## How to
 
-After cloning this repository, don't forget to pull in the submodules!
+1. After cloning this repository, don't forget to pull in the submodules!
 
 <pre>
 git submodule update --init --recursive
+</pre>
+
+2. Fire up the VM's
+
+<pre>
+vagrant up
 </pre>
