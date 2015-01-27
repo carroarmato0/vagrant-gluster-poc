@@ -7,3 +7,6 @@
 [submodule "modules/glusterfs"]
 	path = modules/glusterfs
 	url = https://github.com/thias/puppet-glusterfs.git
+[submodule "modules/lvm"]
+	path = modules/lvm
+	url = https://github.com/puppetlabs/puppetlabs-lvm.git

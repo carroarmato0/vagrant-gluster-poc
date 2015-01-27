@@ -1,1 +1,4 @@
 ---
+# All Gluster nodes should advertise to first storage VM
+glusterfs::server::peers:
+ - '192.168.33.11'

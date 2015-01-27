@@ -1,3 +1,1 @@
 ---
-glusterfs::server::peers:
- - '192.168.33.11'
