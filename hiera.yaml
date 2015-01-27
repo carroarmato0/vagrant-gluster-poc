@@ -3,6 +3,7 @@
   - yaml
 
 :hierarchy:
+  - "nodes/${hostname}"
   - "common"
 
 :yaml:

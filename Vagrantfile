@@ -40,6 +40,9 @@ Vagrant.configure(2) do |config|
     client02.vm.network "private_network", ip: "192.168.33.22"
   end
 
+  # Clear firewall rules to allow intermachine communication
+  config.vm.provision "shell", inline: "iptables -F"
+
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path     = "manifests"
     puppet.manifest_file      = "site.pp"
