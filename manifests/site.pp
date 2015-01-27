@@ -5,6 +5,7 @@ node /storage/ {
   #notify {'Hello, I\'m a storage box!':}
 
   include common
+  include lvm
   include glusterfs::server
 
 }

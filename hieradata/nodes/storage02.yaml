@@ -1,1 +1,9 @@
 ---
+lvm::volume_groups:
+  vg_gluster:
+    physical_volumes:
+      - /dev/sdb
+    logical_volumes:
+      apache_gl01:
+        mountpath: /export/apache_gl01
+        size: '512M'
