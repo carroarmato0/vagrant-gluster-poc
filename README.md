@@ -18,3 +18,11 @@ The Vagrantfile defines 4 Centos virtual machines.
 - 2 Client VM's using the GlusterFS mount
 
 The 2 Storage VM's will get a second disk /dev/sdb on the fly with 500GB space which will be used as bricks for Gluster.
+
+## How to
+
+After cloning this repository, don't forget to pull in the submodules!
+
+<pre>
+git submodule update --init --recursive
+</pre>
