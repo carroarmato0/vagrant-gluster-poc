@@ -33,6 +33,13 @@ git submodule update --init --recursive
 vagrant up
 </pre>
 
+3. Provision them
+
+<pre>
+vagrant provision
+</pre>
+
+
 ## TODO
 
 - Find adequate GlusterFS Puppet module

@@ -27,6 +27,11 @@ node default {
 class common {
 
   include repos
+  include glusterfs::client
+
+  Package {
+    allow_virtual => true,
+  }
 
 }
 
