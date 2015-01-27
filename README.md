@@ -42,10 +42,5 @@ vagrant provision
 
 ## TODO
 
-- Find adequate GlusterFS Puppet module
-- Install GlusterFS Server on the Storage VMs
-- Manage GlusterFS Server on the Storage VMs
-- Install GlusterFS Client on the Clients
 - Manage bricks for Gluster
-- Add Virtual IP for High Availability
 - Install LAMP Stack on Clients which uses the Gluster mount or network attached storage
