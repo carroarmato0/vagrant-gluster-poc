@@ -1,1 +1,5 @@
 ---
+glusterfs::mount:
+  '/var/vhosts':
+    device: 'storage01.local:/apache_gl'
+    options: 'defaults,_netdev,backupvolfile-server=storage02.local'

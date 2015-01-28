@@ -1,1 +1,9 @@
 ---
+lvm::volume_groups:
+  vg_gluster:
+    physical_volumes:
+      - /dev/sdb
+    logical_volumes:
+      brick01:
+        mountpath: /export/brick01
+        size: '512M'
