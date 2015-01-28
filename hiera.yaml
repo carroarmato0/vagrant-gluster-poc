@@ -4,6 +4,8 @@
 
 :hierarchy:
   - "nodes/%{::hostname}"
+  - "storage/common"
+  - "clients/common"
   - "common"
 
 :yaml:
