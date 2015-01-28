@@ -1,12 +1,9 @@
 [submodule "modules/stdlib"]
 	path = modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "modules/keepalived"]
-	path = modules/keepalived
-	url = https://github.com/purpleidea/puppet-keepalived.git
 [submodule "modules/glusterfs"]
 	path = modules/glusterfs
-	url = https://github.com/thias/puppet-glusterfs.git
+	url = https://github.com/carroarmato0/puppet-glusterfs.git
 [submodule "modules/lvm"]
 	path = modules/lvm
 	url = https://github.com/puppetlabs/puppetlabs-lvm.git
