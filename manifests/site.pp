@@ -5,8 +5,12 @@ node /storage/ {
   #notify {'Hello, I\'m a storage box!':}
 
   include common
-  include lvm
-  include glusterfs::server
+  contain lvm
+  contain glusterfs::server
+
+  Class['lvm']->Class['glusterfs::server']
+
+  create_resources('glusterfs::volume', hiera('glusterfs::volume', {}))
 
 }
 

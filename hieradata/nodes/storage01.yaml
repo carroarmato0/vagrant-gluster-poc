@@ -5,6 +5,6 @@ lvm::volume_groups:
     physical_volumes:
       - /dev/sdb
     logical_volumes:
-      apache_gl01:
-        mountpath: /export/apache_gl01
+      brick01:
+        mountpath: /export/brick01
         size: '512M'

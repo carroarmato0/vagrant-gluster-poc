@@ -4,6 +4,9 @@ lvm::volume_groups:
     physical_volumes:
       - /dev/sdb
     logical_volumes:
-      apache_gl01:
-        mountpath: /export/apache_gl01
+      brick01:
+        mountpath: /export/brick01
         size: '512M'
+glusterfs::volume:
+  apache_gl:
+    create_options: 'replica 2 192.168.33.11:/export/brick01/apache 192.168.33.12:/export/brick01/apache'

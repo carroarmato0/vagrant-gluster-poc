@@ -42,5 +42,4 @@ vagrant provision
 
 ## TODO
 
-- Manage bricks for Gluster
 - Install LAMP Stack on Clients which uses the Gluster mount or network attached storage
