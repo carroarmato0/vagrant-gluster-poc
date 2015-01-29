@@ -19,6 +19,8 @@ node /client/ {
   #notify {'Hello, I\'m a client box!':}
 
   include common
+  include apache
+  include apache::mod::php
 
   file { '/srv/apache_data':
     ensure => directory,
