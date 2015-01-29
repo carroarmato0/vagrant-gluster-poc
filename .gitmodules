@@ -7,3 +7,6 @@
 [submodule "modules/lvm"]
 	path = modules/lvm
 	url = https://github.com/puppetlabs/puppetlabs-lvm.git
+[submodule "modules/apache"]
+	path = modules/apache
+	url = git@github.com:vStone/puppet-apache.git
