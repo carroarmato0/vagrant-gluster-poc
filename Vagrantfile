@@ -5,8 +5,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "https://dumps.carroarmato0.be/vagrantboxes/centos-6.6-64b-puppet-vbox.box"
 
-  storage01_extra_disk = './storage01_extra_disk.vdi'
-  storage02_extra_disk = './storage02_extra_disk.vdi'
+  storage01_extra_disk = 'storage01_extra_disk.vdi'
+  storage02_extra_disk = 'storage02_extra_disk.vdi'
 
   config.vm.define "storage01" do |storage01|
     storage01.vm.provider "virtualbox" do |v|
