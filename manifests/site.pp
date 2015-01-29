@@ -20,11 +20,12 @@ node /client/ {
 
   include common
 
-  file { '/var/vhosts':
+  file { '/srv/apache_data':
     ensure => directory,
   }
 
   create_resources('glusterfs::mount', hiera('glusterfs::mount', {}))
+
 
 }
 
