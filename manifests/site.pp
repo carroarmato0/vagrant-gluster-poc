@@ -33,7 +33,7 @@ node /client/ {
 
 node default {
 
-  notify {'I\'m different!':}
+  notify {"I am different!":}
 
 }
 
@@ -91,6 +91,6 @@ class repos {
 
 }
 
-Package {
-  allow_virtual => true,
-}
+#Package {
+#  allow_virtual => true,
+#}
