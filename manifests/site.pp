@@ -28,6 +28,17 @@ node /client/ {
 
   create_resources('glusterfs::mount', hiera('glusterfs::mount', {}))
 
+  apache::vhost {'default':}
+
+  file {'/var/vhosts/default/htdocs/index.html':
+    ensure  => absent,
+    content => '<?php echo \'Estoy usando el Pehape!\' ?>',
+  }
+
+  file {'/var/vhosts/default/htdocs/index.php':
+    ensure  => file,
+    content => '<?php echo \'Estoy usando el Pehape!\' ?>',
+  }
 
 }
 
