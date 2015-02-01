@@ -69,7 +69,7 @@ class common {
 ## Repos
 class repos {
 
-  # 
+  #
 
   include epel
   # Process Repositories before anything else
@@ -102,6 +102,8 @@ class repos {
 
 }
 
-#Package {
-#  allow_virtual => true,
-#}
+if $::puppetversion >= '3.6.1' {
+  Package {
+    allow_virtual => true,
+  }
+}
