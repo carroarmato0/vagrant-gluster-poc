@@ -69,9 +69,8 @@ class common {
 ## Repos
 class repos {
 
-  #
-
   include epel
+
   # Process Repositories before anything else
   stage { 'repositories':
     before => Stage['main'],
