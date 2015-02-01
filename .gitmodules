@@ -10,3 +10,6 @@
 [submodule "modules/apache"]
 	path = modules/apache
 	url = git@github.com:vStone/puppet-apache.git
+[submodule "modules/epel"]
+	path = modules/epel
+	url = https://github.com/stahnma/puppet-module-epel.git

@@ -44,7 +44,7 @@ node /client/ {
 
 node default {
 
-  notify {'I\'m different!':}
+  notify {"I am different!":}
 
 }
 
@@ -69,6 +69,9 @@ class common {
 ## Repos
 class repos {
 
+  # 
+
+  include epel
   # Process Repositories before anything else
   stage { 'repositories':
     before => Stage['main'],
@@ -99,6 +102,6 @@ class repos {
 
 }
 
-Package {
-  allow_virtual => true,
-}
+#Package {
+#  allow_virtual => true,
+#}
